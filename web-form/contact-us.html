@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="contact-us-style.css" />
+    <title>Form Chaalenges</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+
+    <main>
+      <form action="/" method="get">
+        <h2>How can we help you?</h2>
+        <section>
+          <ul>
+            <li>
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                name="user-name"
+                id="name"
+                required
+                placeholder="Hong Gildong"
+              />
+            </li>
+            <li>
+              <label for="email">Your E-Mail Address</label>
+              <input type="email" required placeholder="Gildong@domain" />
+            </li>
+            <li>
+              <label for="phone">Your Phone Number</label>
+              <input type="number" required />
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <textarea
+            name="your-message"
+            id="yourmessage"
+            cols="30"
+            rows="8"
+          ></textarea>
+        </section>
+
+        <section>
+          <label for="">How did you find us?</label>
+          <select name="find-us" id="find-us">
+            <option value="web">Web Search</option>
+            <option value="blog">Blog</option>
+            <option value="youtube">Youtube</option>
+          </select>
+        </section>
+
+        <h2>How should we reply?</h2>
+        <section>
+          <ul>
+            <li class="radio">
+              <input
+                type="radio"
+                name="reply"
+                value="call-me"
+                id="call-me"
+                required
+              />
+              <label for="call-me">Call me</label>
+            </li>
+            <li class="radio">
+              <input
+                type="radio"
+                name="reply"
+                value="email"
+                id="reply-email"
+                required
+              />
+              <label for="reply-email">Send me email</label>
+            </li>
+            <li class="radio">
+              <input
+                type="radio"
+                name="reply"
+                value="don't-reply"
+                id="non-reply"
+                required
+              />
+              <label for="non-reply">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="checkbox">
+          <input
+            type="checkbox"
+            id="accept-terms"
+            name="accept"
+            value="accept"
+            required
+          />
+          <label for="accept-terms">Accept Terms</label>
+        </section>
+
+        <section>
+          <ul class="btn-section">
+            <li>
+              <button type="reset" class="btn" id="clear-btn">Clear</button>
+            </li>
+            <li>
+              <button type="submit" class="btn" id="submit-btn">Submit</button>
+            </li>
+          </ul>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
